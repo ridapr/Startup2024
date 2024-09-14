@@ -17,8 +17,9 @@ My webiste will be a site where users can login to rate and review any form of c
 - **CSS** - Style page with modern look, with nice colors, effects, and layout.
 - **Javascript/React** - Display ratings of media, allow ratings and reviews
 - **Webservice** - Backend service with endpoints for submiting ratings, comparing users rankings, retrives information about media using:
--   https://openlibrary.org/developers/api
--   
+  - https://openlibrary.org/developers/api
+  - https://www.omdbapi.com/
+  - 
 - **DB/Login** - Store users, alongside user data like rating history. Submitting reviews or ratings now allowed unless signed in.
 - **WebSocket data** - Each user will be able to see others reviews and rankings.
 
