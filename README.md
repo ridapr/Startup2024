@@ -12,6 +12,7 @@ My webiste will be a site where users can login to rate and review any form of c
 - See friends recent activity
 
 
+### Frontend and Backend
 - **HTML** - Oragnize general website layout for hoomepage, login page, and profile page.
 - **CSS** - Style page with modern look, with nice colors, effects, and layout.
 - **Javascript/React** - Display ratings of media, allow ratings and reviews
