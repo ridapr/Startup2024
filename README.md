@@ -19,4 +19,8 @@ My webiste will be a site where users can login to rate and review any form of c
 - **Webservice** - Backend service with endpoints for submiting ratings, comparing users rankings, retrives information about media using ---api---
 - **DB/Login** - Store users, alongside user data like rating history. Submitting reviews or ratings now allowed unless signed in.
 - **WebSocket data** - Each user will be able to see others reviews and rankings.
-- 
+
+
+![Home Page](https://github.com/ridapr/Startup2024/blob/main/Images/Home_Page.jpg)
+![Profile Page](https://github.com/ridapr/Startup2024/blob/main/Images/Profile_Page.jpg)
+
