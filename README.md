@@ -21,6 +21,10 @@ My webiste will be a site where users can login to rate and review any form of c
 - **WebSocket data** - Each user will be able to see others reviews and rankings.
 
 
+
+### Home Page
 ![Home Page](https://github.com/ridapr/Startup2024/blob/main/Images/Home_Page.jpg)
+
+### Profile page
 ![Profile Page](https://github.com/ridapr/Startup2024/blob/main/Images/Profile_Page.jpg)
 
