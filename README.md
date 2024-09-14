@@ -20,7 +20,7 @@ My webiste will be a site where users can login to rate and review any form of c
 - **DB/Login** - Store users, alongside user data like rating history. Submitting reviews or ratings now allowed unless signed in.
 - **WebSocket data** - Each user will be able to see others reviews and rankings.
 
-
+## Professionally Rendered Website Mockups
 
 ### Home Page
 ![Home Page](https://github.com/ridapr/Startup2024/blob/main/Images/Home_Page.jpg)
