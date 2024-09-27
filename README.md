@@ -31,3 +31,15 @@ My webiste will be a site where users can login to rate and review any form of c
 ### Profile page
 ![Profile Page](https://github.com/ridapr/Startup2024/blob/main/Images/Profile_Page.jpg)
 
+## HTML Deliverable
+
+For this deliverable I built out the structure of my application using HTML.
+
+- [x] **HTML pages** - 4 HTML pages. Index(login page), Home(Home page to browse), Profile(view a user's profile page and stats), Item(description of selected media to leave reviews)
+- [x] **Links** - All pages have links to each other. Eventually, the Item link will be removed, accessable by selecting a movie on the Home page
+- [x] **Text** - Each media have places for descriptions, release date, and other info on the Item page
+- [x] **Images** - Currently I have uploaded placeholder images for the media thumbnails, which will eventually be relaced with posters/covers using an API
+- [x] **DB/Login** - Input box and submit button for login. Media info will be pulled from database
+- [x] **WebSocket** - Users will see other users reviews and the average ranking of a piece of media
+
+
