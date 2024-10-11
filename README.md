@@ -49,10 +49,10 @@ For this deliverable I built out the structure of my application using HTML.
 For this deliverable I properly styled the application into its final appearance.
 
 - [x] **Header, footer, and main content body**
-- [x] **Navigation elements** - I dropped the underlines and changed the color for anchor elements.
+- [x] **Navigation elements** - Added horizontal navigation bar
 - [x] **Responsive to window resizing** - My app looks great on all window sizes and devices
-- [x] **Application elements** - Used good contrast and whitespace
+- [x] **Application elements** - Used good contrast and whitespace (Color scheme is still a work in progress)
 - [x] **Application text content** - Consistent fonts
-- [ ] **Application images** - Still don't have images and so no styling here. 😔
+- [x] **Application images** - Thumbnail place holders for all needed images
 
 
