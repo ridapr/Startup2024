@@ -27,3 +27,21 @@ menu {
     padding: 0;
     margin: 0;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+main {
+    padding: 20px;  
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
