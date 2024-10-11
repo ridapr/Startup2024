@@ -42,4 +42,17 @@ For this deliverable I built out the structure of my application using HTML.
 - [x] **DB/Login** - Input box and submit button for login. Media info will be pulled from database
 - [x] **WebSocket** - Users will see other users reviews and the average ranking of a piece of media
 
+## CSS deliverable
+
+➡️ The following is an example of the required information for the `Startup CSS` deliverable
+
+For this deliverable I properly styled the application into its final appearance.
+
+- [x] **Header, footer, and main content body**
+- [x] **Navigation elements** - I dropped the underlines and changed the color for anchor elements.
+- [x] **Responsive to window resizing** - My app looks great on all window sizes and devices
+- [x] **Application elements** - Used good contrast and whitespace
+- [x] **Application text content** - Consistent fonts
+- [ ] **Application images** - Still don't have images and so no styling here. 😔
+
 
