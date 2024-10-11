@@ -1,10 +1,6 @@
-html {
-    padding: 0;
-    background: #504945;
-    color: white;
-}
-
 body {
+    color: white;
+    background: #504945;
     margin: 0;
     padding: 0;
     font-family: sans-serif
@@ -19,26 +15,32 @@ header {
     align-items: center;
 }
 
-ul {
+  
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
+}
+
+nav ul li {
     float: left;
-  }
-  
-  li a {
+}
+
+nav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
