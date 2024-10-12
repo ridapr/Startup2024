@@ -65,8 +65,8 @@ form {
   
 div {
     display: flex;
-    gap: 5px; /* Space between label and input */
-    align-items: center; /* Vertically align label and input */
+    gap: 5px;
+    align-items: center;
 }
   
 span {
@@ -90,13 +90,12 @@ button  {
     border-radius: 3px;
     cursor: pointer;  
   
-    margin-right: 10px; /* Space between buttons */
+    margin-right: 10px;
 }
   
 button:last-child {
-    background-color: #316046; /* Green for Create button */
+    background-color: #316046;
 }
-
 
 
 footer {
