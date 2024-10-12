@@ -1,21 +1,19 @@
 body {
     color: white;
-    background: #504945;
+    background: #3f404f;
     margin: 0;
     padding: 0;
     font-family: sans-serif
 }
 
 header {
-    background-color: #282828;
-    color: #fff;
+    background-color: #0d0f1f;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-  
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -29,20 +27,18 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #3f404f;
 }
 
 h1 {
     font-size: 2rem;
     margin: 0;
-    color: white;
 }
 
 
@@ -53,8 +49,7 @@ h1 {
 
 
 footer {
-    background-color: #282828;
-    color: #ccc;
+    background-color: #0d0f1f;
     padding: 10px;
     text-align: center;
 }
