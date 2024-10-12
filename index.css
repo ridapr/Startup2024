@@ -39,6 +39,7 @@ nav ul li a:hover {
 h1 {
     font-size: 2rem;
     margin: 0;
+    margin-bottom: 20px;
 }
 
 a {
@@ -48,7 +49,53 @@ a {
 
 
 
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;  
+  
+    gap: 10px;
+}
+  
+div {
+    display: flex;
+    gap: 5px; /* Space between label and input */
+    align-items: center; /* Vertically align label and input */
+}
+  
+span {
+    font-weight: bold;
+}
+  
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
 
+button  {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #805456;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;  
+  
+    margin-right: 10px; /* Space between buttons */
+}
+  
+button:last-child {
+    background-color: #316046; /* Green for Create button */
+}
 
 
 
