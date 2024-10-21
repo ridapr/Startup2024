@@ -111,7 +111,9 @@ sudo: Allows you to run commands with elevated privileges (superuser).
 * Which of the following console command creates a remote shell session? 
 * Which of the following is true when the -la parameter is specified for the ls console command? **This command lists all files and directories in the current directory, including hidden files (those starting with a dot). The -l flag provides a long listing format, showing details like permissions, owner, group, size, modification date, and filename. The -a flag includes hidden files in the listing.**
 * Which of the following is true for the domain name banana.fruit.bozo.click, which is the top level domain, which is a subdomain, which is a root domain? **top level domain: click. Root domain:bozo. subdomain:banana.fruit**
-* Is a web certificate is necessary to use HTTPS.
-* Can a DNS A record can point to an IP address or another A record.
-* Port 443, 80, 22 is reserved for which protocol?
+* Is a web certificate is necessary to use HTTPS. **yes. SSL/TLS certificate is a digital certificate that authenticates a website's identity and enables an encrypted connection.**
+* Can a DNS A record can point to an IP address or another A record. **no**
+* Port 443, 80, 22 is reserved for which protocol? **Port 443: HTTPS (Hypertext Transfer Protocol Secure)
+Port 80: HTTP (Hypertext Transfer Protocol)
+Port 22: SSH (Secure Shell)**
 * What will the following code using Promises output when executed?
