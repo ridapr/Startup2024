@@ -9,7 +9,7 @@ While in deployFiles.sh directory:
 test from github
 
 Midterm Questions
-*In the following code, what does the link element do?
+* In the following code, what does the link element do?
 *In the following code, what does a div tag do?
 *In the following code, what is the difference between the #title and .grid selector?
 *In the following code, what is the difference between padding and margin?
