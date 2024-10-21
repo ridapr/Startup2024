@@ -16,10 +16,7 @@ Midterm Questions
 * Given this HTML and this CSS how will the images be displayed using flex?
 * What does the following padding CSS do?
 * What does the following code using arrow syntax function declaration do? **Without Arrow: hello = function() {
-* return "Hello World!";
-* } || hello = () => {
-  return "Hello World!";
-}**
+  return "Hello World!";} || hello = () => {return "Hello World!";} || If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword:**
 * What does the following code using map with an array output?
 * What does the following code output using getElementByID and addEventListener?
 * What does the following line of Javascript do using a # selector?
