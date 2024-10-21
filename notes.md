@@ -17,11 +17,13 @@ Midterm Questions
 * What does the following padding CSS do?
 * What does the following code using arrow syntax function declaration do? **Without Arrow: hello = function() {return "Hello World!";} || hello = () => {return "Hello World!";} || If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword: hello = () => "Hello World!";**
 * What does the following code using map with an array output?
-* What does the following code output using getElementByID and addEventListener?
+* What does the following code output using getElementByID and addEventListener? **The built-in method addEventListener() allows you to attach an event listener to an HTML element. It accepts two parameters: the event type to listen to and the callback function to run when the event is triggered: Element.addEventListener(type, callbackFn);**
 * What does the following line of Javascript do using a # selector?
 * Which of the following are true? (mark all that are true about the DOM)
-* By default, the HTML span element has a default CSS display property value of: 
-* How would you use CSS to change all the div elements to have a background color of red?
+* By default, the HTML span element has a default CSS display property value of: **inline**
+* How would you use CSS to change all the div elements to have a background color of red? **div {
+  background-color: red;
+}**
 * How would you display an image with a hyperlink in HTML?
 * In the CSS box model, what is the ordering of the box layers starting at the inside and working out?* * 
 * Given the following HTML, what CSS would you use to set the text "trouble" to green and leave the "double" text unaffected?
