@@ -9,17 +9,17 @@ While in deployFiles.sh directory:
 test from github
 
 Midterm Questions
-In the following code, what does the link element do?
-In the following code, what does a div tag do?
-In the following code, what is the difference between the #title and .grid selector?
-In the following code, what is the difference between padding and margin?
-Given this HTML and this CSS how will the images be displayed using flex?
-What does the following padding CSS do?
-What does the following code using arrow syntax function declaration do?
-What does the following code using map with an array output?
-What does the following code output using getElementByID and addEventListener?
-What does the following line of Javascript do using a # selector?
-Which of the following are true? (mark all that are true about the DOM)
+*In the following code, what does the link element do?
+*In the following code, what does a div tag do?
+*In the following code, what is the difference between the #title and .grid selector?
+*In the following code, what is the difference between padding and margin?
+*Given this HTML and this CSS how will the images be displayed using flex?
+*What does the following padding CSS do?
+*What does the following code using arrow syntax function declaration do?
+*What does the following code using map with an array output?
+*What does the following code output using getElementByID and addEventListener?
+*What does the following line of Javascript do using a # selector?
+*Which of the following are true? (mark all that are true about the DOM)
 By default, the HTML span element has a default CSS display property value of: 
 How would you use CSS to change all the div elements to have a background color of red?
 How would you display an image with a hyperlink in HTML?
