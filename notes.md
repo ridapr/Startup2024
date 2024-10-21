@@ -15,7 +15,11 @@ Midterm Questions
 * In the following code, what is the difference between padding and margin? **The biggest difference between padding and margin is that vertical margins auto-collapse, and padding doesn't. Consider two elements one above the other each with padding of 1em. This padding is considered to be part of the element and is always preserved.You will end up with the content of the first element, followed by the padding of the first element, followed by the padding of the second, followed by the content of the second element. Thus the content of the two elements will end up being 2em apart.Now replace that padding with 1em margin. Margins are considered to be outside of the element, and margins of adjacent items will overlap.** 
 * Given this HTML and this CSS how will the images be displayed using flex?
 * What does the following padding CSS do?
-* What does the following code using arrow syntax function declaration do?
+* What does the following code using arrow syntax function declaration do? **Without Arrow: hello = function() {
+* return "Hello World!";
+* } || hello = () => {
+  return "Hello World!";
+}**
 * What does the following code using map with an array output?
 * What does the following code output using getElementByID and addEventListener?
 * What does the following line of Javascript do using a # selector?
