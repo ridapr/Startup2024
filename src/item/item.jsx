@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function item(){
+export function Item(){
     return (
         <main>
             <h1>"Title"</h1>
