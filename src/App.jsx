@@ -36,7 +36,7 @@ function App() {
               {/* )} */}
               <li className='nav-item'>
                 <NavLink className='nav-link' to='item'>
-                  Item
+                  Item (temporary link)
                 </NavLink>
               </li>
             </menu>
@@ -51,7 +51,6 @@ function App() {
         </Routes>
 
         <footer>
-          <hr />
           <span className="text-reset">Created by: Riley</span>
           <br />
           <a href="https://github.com/ridapr/Startup2024">GitHub</a>

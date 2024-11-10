@@ -1,45 +1,125 @@
-body {
-  color: white;
-  background: #3f404f;
+/* Global styles */
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #282828;
+  color: #ebdbb2;
+}
+
+/* Header styles */
 header {
-  background-color: #0d0f1f;
-  padding: 20px 0;
+  background-color: #3c3836; 
+  color: #fbf1c7;
+}
+
+header h1 {
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #fbf1c7;
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: #504945;
+  padding: 0.5rem 2rem;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
   padding: 0;
-  overflow: hidden;
+  margin: 0;
+  gap: 2rem;
+  align-items: center;
 }
 
-nav ul li {
-  float: left;
+.nav-item {
+  display: inline-block;
 }
 
-nav ul li a {
-  display: block;
-  text-align: center;
-  padding: 14px 20px;
+.nav-link {
+  color: #ebdbb2;
   text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
-nav ul li a:hover {
-  background-color: #3f404f;
+.nav-link:hover {
+  background-color: #3c3836;
+  color: #fabd2f;
 }
 
+.nav-link.active {
+  background-color: #83a598;
+  color: #fbf1c7; 
+}
 
+/* Container for Routes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+/* Footer styles */
 footer {
-  background-color: #0d0f1f;
-  padding: 10px;
+  background-color: #3c3836;
+  color: #ebdbb2;
   text-align: center;
+  padding: 1rem;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #83a598; 
+  text-decoration: none;
+  margin-top: 0.5rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #8ec07c;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-nav {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin: 0.25rem 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
 }
