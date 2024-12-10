@@ -44,8 +44,6 @@ For this deliverable I built out the structure of my application using HTML.
 
 ## CSS deliverable
 
-➡️ The following is an example of the required information for the `Startup CSS` deliverable
-
 For this deliverable I properly styled the application into its final appearance.
 
 - [x] **Header, footer, and main content body**
@@ -54,5 +52,16 @@ For this deliverable I properly styled the application into its final appearance
 - [x] **Application elements** - Used good contrast and whitespace (Color scheme is still a work in progress)
 - [x] **Application text content** - Consistent fonts
 - [x] **Application images** - Thumbnail place holders for all needed images
+
+## React deliverable
+
+For this deliverable I used JavaScript and React so that the application completely works for a single user. I also added placeholders for future technology.
+
+- [x] **Bundled and transpiled** - done!
+- [x] **Components** - Login, rankings, and reviews are all components with mocks for login, WebSocket.
+  - [] **login** - When you press enter or the login button it takes you to the home page.
+  - [x] **database** - Currently this is placeholders in the startup files, but it will be replaced with the database data later.
+  - [x] **WebSocket** - Have placeholders for where reviews will be made and read. This will be replaced with WebSocket later.
+- [x] **Router** - Routing between login and other pages on the nav bar is working
 
 
