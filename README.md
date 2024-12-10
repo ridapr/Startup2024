@@ -64,4 +64,12 @@ For this deliverable I used JavaScript and React so that the application complet
   - [x] **WebSocket** - Have placeholders for where reviews will be made and read. This will be replaced with WebSocket later.
 - [x] **Router** - Routing between login and other pages on the nav bar is working
 
+## Service deliverable
 
+For this deliverable I added backend endpoints can receive and display test data. (This will be movie reviews and ratings in the future)
+
+- [x] **Node.js/Express HTTP service** - done!
+- [x] **Static middleware for frontend** - done!
+- [ ] **Calls to third party endpoints** - I haven't done this yet
+- [x] **Backend service endpoints** - Placeholders for user reviews and ratings
+- [x] **Frontend calls service endpoints** - I did this using the fetch function.
