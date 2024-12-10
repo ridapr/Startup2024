@@ -38,7 +38,7 @@ export function Item(){
                 </div>
                 <h2>Reviews (Websocket data)</h2>
                 
-                <Button onClick={handleClick}>test</Button>
+                <Button onClick={handleClick}>Refresh Reviews (test)</Button>
                 <div> {teststuff} </div>
                 
                 <div className='review-item'>
