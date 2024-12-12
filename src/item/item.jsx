@@ -62,7 +62,7 @@ export function Item(props) {
             
                 <div className='input-group'>
                     <span>Review:</span>
-                    <input onChange={handleChange} name="text_review" value={review} placeholder="Review" />
+                    <input type='text' onChange={handleChange} name="text_review" value={review} placeholder="Review" />
                 </div>
                 <Button onClick={handleClick_submit}>Submit</Button>
                 

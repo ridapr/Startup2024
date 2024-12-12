@@ -67,7 +67,8 @@ input[type="text"] {
     border-radius: 4px;
     font-size: 1rem;
     color: #fbf1c7;
-    flex: 1;
+    flex-grow: 1;
+    width: 100%;
 }
 
 input[type="number"] {

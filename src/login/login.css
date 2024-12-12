@@ -31,15 +31,15 @@
     font-weight: 500;
   }
   
-  .login-container input {
-    width: 100%;
-    padding: 0.75rem;
+input {
+    padding: 0.5rem;
+    background-color: #282828;
     border: 1px solid #504945;
     border-radius: 4px;
     font-size: 1rem;
-    background-color: #282828;
     color: #fbf1c7;
-    transition: all 0.3s ease;
+    flex-grow: 1;
+    width: 100%;
   }
   
   .login-container input:focus {
