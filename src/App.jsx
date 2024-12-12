@@ -43,6 +43,7 @@ function App() {
                   Item (temporary link)
                 </NavLink>
               </li>
+
             </menu>
           </nav>
         </header>
@@ -63,9 +64,10 @@ function App() {
             exact
           />
           {/* <Route path="/" element={<Login />} /> */}
+          
           <Route path="/home" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/item" element={<Item />} />
+          <Route path="/profile" element={<Profile userName={userName} />} />
+          <Route path="/item" element={<Item userName={userName} />} />
         </Routes>
 
         <footer>

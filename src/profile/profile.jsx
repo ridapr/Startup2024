@@ -2,12 +2,12 @@ import React from 'react';
 
 import './profile.css'
 
-export function Profile() {
+export function Profile(props) {
     return (
         <main>
             <h1>Profile Page</h1>
             <img src="account_placeholder.png" alt="Profile Picture" width="100" height="100"/>
-            <h1>Profile Name Placeholder</h1>
+            <h1>{props.userName}</h1>
             <p>Placeholder for Profile info/stats</p>
             <h2>Recent Reviews</h2>
             <ul className="recent-reviews">

@@ -7,7 +7,7 @@ const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostna
 const client = new MongoClient(url);
 const db = client.db('startup');
 const userCollection = db.collection('user');
-const ReviewCollection = db.collection('review');
+const reviewCollection = db.collection('review');
 
 // This will asynchronously test the connection and exit the process if it fails
 (async function testConnection() {
@@ -41,17 +41,21 @@ async function createUser(email, password) {
 }
 
 async function addReview(review) {
-  return ReviewCollection.insertOne(review);
+  return reviewCollection.insertOne(review);
 }
 
+// function getReviews() {
+//   const query = { review: { $gt: 0, $lt: 900 } };
+//   const options = {
+//     sort: { review: -1 },
+//     limit: 10,
+//   };
+//   const cursor = reviewCollection.find(query, options);
+//   return cursor.toArray();
+// }
+
 function getReviews() {
-  const query = { review: { $gt: 0, $lt: 900 } };
-  const options = {
-    sort: { review: -1 },
-    limit: 10,
-  };
-  const cursor = reviewCollection.find(query, options);
-  return cursor.toArray();
+  return reviewCollection.find().toArray();
 }
 
 module.exports = {
