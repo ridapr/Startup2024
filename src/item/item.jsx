@@ -5,52 +5,25 @@ import './item.css';
 
 export function Item(props) {
     const userName = props.userName;
+    
     // retrieve reviews from database
-    // const [getReview, setGetReview] = React.useState("Please refresh reviews");
-    // function handleClick_test() {
-    //     console.log('Button clicked');
-    //     fetch('api/reviews')
-    //     .then((response) => response.json())
-    //     .then((get_review) => {
-    //         console.log(get_review);
-    //         console.log(get_review.review);
-    //         setGetReview(get_review.review);
-    //     });
-    // }    
     const [db_reviews, setdb_reviews] = React.useState(null);
 
-    // React.useEffect(() => {
-    //     const fetchReviews = async () => {
-    //         const response = await fetch('/api/reviews');
-    //         const json = await response.json();
-
-    //         if (response.ok) {
-    //             setdb_reviews(json);
-    //         }
-    //     }
-        
-    // } , []);   
     const fetchReviews = React.useCallback(async () => {
         const response = await fetch('/api/reviews');
         const json = await response.json();
         if (response.ok) {
             setdb_reviews(json);
         }
-
-       
     }, []);    
 
-    // const [teststuff, setTeststuff] = React.useState("Starting Test");
-    // function handleClick_test() {
-    //     console.log('Button clicked');
-    //     fetch('api/test')
-    //     .then((response) => response.json())
-    //     .then((testing) => {
-    //         console.log(testing);
-    //         console.log(testing.test);
-    //         setTeststuff(testing.test);
-    //     });
-    // }    
+    React.useEffect(() => {
+        fetchReviews();
+    }, [fetchReviews]);
+
+    const handleRefreshReviews = () => {
+        fetchReviews();
+    }
     // end of retrieve reviews from database
 
     // save review to database
@@ -95,7 +68,7 @@ export function Item(props) {
                 
                 <h2>Reviews (Websocket data)</h2>
                 
-                <Button onClick={handleClick_refresh}>Refresh Reviews (test)</Button>
+                <Button onClick={handleRefreshReviews}>Refresh Reviews</Button>
 
                 <div className='review-item'>
                     {db_reviews && db_reviews.slice().reverse().map((db_review) => (
