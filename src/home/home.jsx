@@ -4,9 +4,28 @@ import {Link} from 'react-router-dom';
 import './home.css';
 
 export function Home() {
+  const [quote, setQuote] = React.useState('Loading...');
+  const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
+
+  // We only want this to render the first time the component is created and so we provide an empty dependency list.
+  React.useEffect(() => {
+    fetch('https://quote.cs260.click')
+      .then((response) => response.json())
+      .then((data) => {
+        setQuote(data.quote);
+        setQuoteAuthor(data.author);
+      })
+      .catch();
+  }, []);
+    
     return (
         <main>
             <h1>Home Page</h1>
+
+            <div className='quote-box bg-light text-dark'>
+                <p className='quote'>"{quote}" - {quoteAuthor}</p>
+            </div>
+
             <h2>Movies - Popular This Week (This will use database data)</h2>
             
             <section className="movie-section">
