@@ -83,7 +83,7 @@ secureApiRouter.get('/reviews', async (req, res) => {
 // Submit Review
 secureApiRouter.post('/reviews', async (req, res) => {
   const review = { ...req.body, ip: req.ip };
-  await DB.addScore(review);
+  await DB.addReview(review);
   const reviews = await DB.getReviews();
   res.send(reviews);
 });

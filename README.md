@@ -73,3 +73,23 @@ For this deliverable I added backend endpoints can receive and display test data
 - [x] **Calls to third party endpoints** - Added a quote at the top of the Home Page
 - [x] **Backend service endpoints** - Placeholders for user reviews and ratings
 - [x] **Frontend calls service endpoints** - I did this using the fetch function.
+
+## DB/Login deliverable
+
+For this deliverable I associate the reviews with the logged in user. I stored the reviews in the database.
+
+- [x] **MongoDB Atlas database created** - Done
+- [x] **Stores data in MongoDB** - Done
+- [x] **User registration** - Creates a new account in the database.
+- [x] **existing user** - Stores the votes under the same user if the user already exists.
+- [x] **Use MongoDB to store credentials** - Stores both user and their votes.
+- [x] **Restricts functionality** - Reviews can only be submitted by an authenticated user, and the Profile page is hidden until logged in
+
+## WebSocket deliverable - PlaceHolder, not done yet
+
+For this deliverable I used webSocket to update the votes on the frontend in realtime.
+
+- [ ] **Backend listens for WebSocket connection** - done!
+- [ ] **Frontend makes WebSocket connection** - done!
+- [ ] **Data sent over WebSocket connection** - done!
+- [ ] **WebSocket data displayed** - All user votes display in realtime

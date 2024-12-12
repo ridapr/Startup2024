@@ -16,6 +16,38 @@ export function Item(){
         });
     }    
 
+    const [reviews, setReviews] = React.useState([]);
+
+  // Demonstrates calling a service asynchronously so that
+  // React can properly update state objects with the results.
+  React.useEffect(() => {
+    fetch('/api/reviews')
+      .then((response) => response.json())
+      .then((reviews) => {
+        setReviews(reviews);
+      });
+  }, []);
+
+  // Demonstrates rendering an array with React
+  const reviewRows = [];
+  if (reviews.length) {
+    for (const [i, review] of reviews.entries()) {
+      reviewRows.push(
+        <tr key={i}>
+          <td>{i}</td>
+          <td>{review.name.split('@')[0]}</td>
+          <td>{review.review}</td>
+        </tr>
+      );
+    }
+  } else {
+    reviewRows.push(
+      <tr key='0'>
+        <td colSpan='4'>Be the first to write a review</td>
+      </tr>
+    );
+  }
+
     return (
         <main>
             <h1>"Title"</h1>
@@ -24,10 +56,7 @@ export function Item(){
                 </div>
                 <div className='info-section'>Release Date: </div>
                 <div className='info-section'>Description: </div>
-                <div className='input-group'>
-                    <span>Rating:</span>
-                    <input type="number" placeholder="Rating" />
-                </div>
+            
                 <div className='input-group'>
                     <span>Review:</span>
                     <input type="text" placeholder="Review" />
