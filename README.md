@@ -70,6 +70,6 @@ For this deliverable I added backend endpoints can receive and display test data
 
 - [x] **Node.js/Express HTTP service** - done!
 - [x] **Static middleware for frontend** - done!
-- [ ] **Calls to third party endpoints** - I haven't done this yet
+- [x] **Calls to third party endpoints** - Added a quote at the top of the Home Page
 - [x] **Backend service endpoints** - Placeholders for user reviews and ratings
 - [x] **Frontend calls service endpoints** - I did this using the fetch function.
