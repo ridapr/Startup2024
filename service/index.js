@@ -6,7 +6,7 @@ const DB = require('./database.js');
 
 const authCookieName = 'token';
 
-// The service port. In production the front-end code is statically hosted by the service on the same port.
+// The service port may be set on the command line
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
 // JSON body parsing using built-in middleware
@@ -74,23 +74,19 @@ secureApiRouter.use(async (req, res, next) => {
   }
 });
 
-// // GetScores
-// apiRouter.get('/scores', (_req, res) => {
-//   res.send(scores);
-// });
-
-var testdata = {test:"testdata"};
-apiRouter.get('/test', (_req, res) => {
-  console.log("In Test")
-  res.send(testdata);
+// GetReviews
+secureApiRouter.get('/reviews', async (req, res) => {
+  const reviews = await DB.getReviews();
+  res.send(reviews);
 });
 
-// // SubmitScore
-// apiRouter.post('/score', (req, res) => {
-//   scores = updateScores(req.body, scores);
-//   res.send(scores);
-// });
-
+// Submit Review
+secureApiRouter.post('/reviews', async (req, res) => {
+  const review = { ...req.body, ip: req.ip };
+  await DB.addScore(review);
+  const reviews = await DB.getReviews();
+  res.send(reviews);
+});
 
 // Default error handler
 app.use(function (err, req, res, next) {
@@ -111,24 +107,12 @@ function setAuthCookie(res, authToken) {
   });
 }
 
-// updateScores considers a new score for inclusion in the high scores.
-// function updateScores(newScore, scores) {
-//   let found = false;
-//   for (const [i, prevScore] of scores.entries()) {
-//     if (newScore.score > prevScore.score) {
-//       scores.splice(i, 0, newScore);
-//       found = true;
-//       break;
-//     }
-//   }
+var testdata = {test:"testdata"};
+apiRouter.get('/test', (_req, res) => {
+  console.log("In Test")
+  res.send(testdata);
+});
 
-//   if (!found) {
-//     scores.push(newScore);
-//   }
-
-//   if (scores.length > 10) {
-//     scores.length = 10;
-//   }
-
-//   return scores;
-// }
+app.listen(port, function () {
+  console.log(`Listening on port ${port}`);
+});

@@ -33,9 +33,7 @@ export function Item(){
                     <input type="text" placeholder="Review" />
                 </div>
                 <button type="submit">Submit</button>
-                <div className='average-rating'>
-                    <span>Average Rating: ***** (this will use websocket data to show the average rating of the media)</span>
-                </div>
+                
                 <h2>Reviews (Websocket data)</h2>
                 
                 <Button onClick={handleClick}>Refresh Reviews (test)</Button>
