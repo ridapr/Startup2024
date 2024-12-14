@@ -42,54 +42,6 @@ byuElement.style.color = "green";**
 * How do you declare the document type to be html? **<!DOCTYPE html>**
 * What is valid javascript syntax for if, else, for, while, switch statements?
 
-let age = 25;
-
-if (age >= 18) {
-  console.log("You are an adult.");
-} else {
-  console.log("You are a minor.");
-}
-
-for (let i = 0; i < 5; i++) {
-  console.log("Iteration:", i);
-}
-
-let i = 0;
-while (i < 3) {
-  console.log("While loop iteration:", i);
-  i++;
-}
-
-let day = "Monday";
-switch (day) {
-  case "Monday":
-    console.log("It's Monday!");
-    break;
-  case "Tuesday":
-    console.log("It's Tuesday!");
-    break;
-  default:
-    console.log("It's  
- another day.");
-}
-* What is the correct syntax for creating a javascript object?
-  let person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 30,
-  city: "New York"
-};
-* Is it possible to add new properties to javascript objects?
-  let person = {
-  firstName: "John",
-  lastName: "Doe"
-};
-
-// Adding a new property using dot notation
-person.age = 30;
-
-// Adding a new property using bracket notation
-person["city"] = "New York";
 * If you want to include JavaScript on an HTML page, which tag do you use? **<script src="script.js"></script>**
 * Given the following HTML, what JavaScript could you use to set the text "animal" to "crow" and leave the "fish" text unaffected?
 * Which of the following correctly describes JSON? **JSON, or JavaScript Object Notation, is a lightweight data-interchange format that's easy for humans to read and write, and easy for machines to parse and generate. It's based on a subset of the JavaScript programming language, but it's language-independent and can be used by any programming language.**
@@ -117,16 +69,16 @@ sudo: Allows you to run commands with elevated privileges (superuser).
 Port 80: HTTP (Hypertext Transfer Protocol)
 Port 22: SSH (Secure Shell)**
 * What will the following code using Promises output when executed?
-* 
+  
 
 
 
 
 
 # Final Study Guide
-* What is the default port for HTTP/HTTPS/SSH? **SSH = 22, Http = , Https =  **
-* What does an HTTP status code in the range of 300/400/500 indicate?
-* What does the HTTP header content-type allow you to do?
+* What is the default port for HTTP/HTTPS/SSH? **SSH = 22, Http = 80, Https = 443**
+* What does an HTTP status code in the range of 300/400/500 indicate? ****
+* What does the HTTP header content-type allow you to do? ****
 * What does a “Secure cookie”/”Http-only cookie”/”Same-site cookie” do? https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 * Assuming the following Express middleware, what would be the console.log output for an HTTP GET request with a URL path of /api/document?
 * Given the following Express service code: What does the following front end JavaScript that performs a fetch return?
