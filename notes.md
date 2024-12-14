@@ -38,7 +38,7 @@ Midterm Questions
 const byuElement = document.getElementById("byu");
 // Change the text color to green
 byuElement.style.color = "green";**
-* What is the opening HTML tag for a paragraph, ordered list, unordered list, second level heading, first level heading, third level heading? **//<p><ol><ul><h2><h1><h3>//**
+* What is the opening HTML tag for a paragraph, ordered list, unordered list, second level heading, first level heading, third level heading?
 * How do you declare the document type to be html? **<!DOCTYPE html>**
 * What is valid javascript syntax for if, else, for, while, switch statements?
 
