@@ -78,16 +78,14 @@ Port 22: SSH (Secure Shell)**
 # Final Study Guide
 * What is the default port for HTTP/HTTPS/SSH? **SSH = 22, Http = 80, Https = 443**
 * What does an HTTP status code in the range of 300/400/500 indicate? **300 = redirection message, 400 = client error response, 500 = server error response**
-* What does the HTTP header content-type allow you to do? **The HTTP Content-Type representation header is used to indicate the original media type of a resource before any content encoding is applied.
-
-In responses, the Content-Type header informs the client about the media type of the returned data. In requests such as POST or PUT, the client uses the Content-Type header to specify the type of content being sent to the server. If a server implementation or configuration is strict about content type handling, a 415 client error response may be returned. **
-* What does a “Secure cookie”/”Http-only cookie”/”Same-site cookie” do? https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+* What does the HTTP header content-type allow you to do? **The HTTP Content-Type representation header is used to indicate the original media type of a resource before any content encoding is applied. In responses, the Content-Type header informs the client about the media type of the returned data. In requests such as POST or PUT, the client uses the Content-Type header to specify the type of content being sent to the server. If a server implementation or configuration is strict about content type handling, a 415 client error response may be returned.**
+* What does a “Secure cookie”/”Http-only cookie”/”Same-site cookie” do? https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies **1.The user sends sign-in credentials to the server, for example via a form submission. 2.If the credentials are correct, the server updates the UI to indicate that the user is signed in, and responds with a cookie containing a session ID that records their sign-in status on the browser. 3.At a later time, the user moves to a different page on the same site. The browser sends the cookie containing the session ID along with the corresponding request to indicate that it still thinks the user is signed in. 4.The server checks the session ID and, if it is still valid, sends the user a personalized version of the new page. If it is not valid, the session ID is deleted and the user is shown a generic version of the page (or perhaps shown an "access denied" message and asked to sign in again).**
 * Assuming the following Express middleware, what would be the console.log output for an HTTP GET request with a URL path of /api/document?
 * Given the following Express service code: What does the following front end JavaScript that performs a fetch return?
 * Given the following MongoDB query, select all of the matching documents {name:Mark}
-* How should user passwords be stored?
+* How should user passwords be stored? **Hashed**
 * Assuming the following node.js websocket code in the back end, and the following front end websocket code, what will the front end log to the console?
-* What is the websocket protocol intended to provide?
+* What is the websocket protocol intended to provide? **Realtime updates. WebSocket is a bidirectional communication protocol that can send the data from the client to the server or from the server to the client by reusing the established connection channel**
 * What do the following acronyms stand for? JSX, JS, AWS, NPM, NVM
 * Assuming an HTML document with a body element. What text content will the following React component generate?  The react component will use parameters.
 * Given a set of React components that include each other, what will be generated
