@@ -77,8 +77,10 @@ Port 22: SSH (Secure Shell)**
 
 # Final Study Guide
 * What is the default port for HTTP/HTTPS/SSH? **SSH = 22, Http = 80, Https = 443**
-* What does an HTTP status code in the range of 300/400/500 indicate? ****
-* What does the HTTP header content-type allow you to do? ****
+* What does an HTTP status code in the range of 300/400/500 indicate? **300 = redirection message, 400 = client error response, 500 = server error response**
+* What does the HTTP header content-type allow you to do? **The HTTP Content-Type representation header is used to indicate the original media type of a resource before any content encoding is applied.
+
+In responses, the Content-Type header informs the client about the media type of the returned data. In requests such as POST or PUT, the client uses the Content-Type header to specify the type of content being sent to the server. If a server implementation or configuration is strict about content type handling, a 415 client error response may be returned. **
 * What does a “Secure cookie”/”Http-only cookie”/”Same-site cookie” do? https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 * Assuming the following Express middleware, what would be the console.log output for an HTTP GET request with a URL path of /api/document?
 * Given the following Express service code: What does the following front end JavaScript that performs a fetch return?
