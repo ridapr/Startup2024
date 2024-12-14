@@ -86,15 +86,19 @@ Port 22: SSH (Secure Shell)**
 * How should user passwords be stored? **Hashed**
 * Assuming the following node.js websocket code in the back end, and the following front end websocket code, what will the front end log to the console?
 * What is the websocket protocol intended to provide? **Realtime updates. WebSocket is a bidirectional communication protocol that can send the data from the client to the server or from the server to the client by reusing the established connection channel**
-* What do the following acronyms stand for? JSX, JS, AWS, NPM, NVM
+* What do the following acronyms stand for? JSX, JS, AWS, NPM, NVM **JavaScript XML, JavaScript, Amazon Web Services, Nope Package Manager, Node Version Manager**
 * Assuming an HTML document with a body element. What text content will the following React component generate?  The react component will use parameters.
 * Given a set of React components that include each other, what will be generated
-* What does a React component with React.useState do?
-* What are React Hooks used for?
+* What does a React component with React.useState do? **The React useState Hook allows us to track state in a function component, and change it based on certian criteria**
+* What are React Hooks used for? **Hooks allow us to "hook" into React features such as state and lifecycle methods. for example, useState is a hook** 
 * What does the State Hook/Context Hook/Ref Hook/Effect Hook/Performance Hook do? https://react.dev/reference/react/hooks
+  * **State Hook - State lets a component “remember” information like user input. For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index. useState declares a state variable that you can update directly.**
+  * **Ref Hook -Refs let a component hold some information that isn’t used for rendering, like a DOM node or a timeout ID. Unlike with state, updating a ref does not re-render your component. Refs are an “escape hatch” from the React paradigm. They are useful when you need to work with non-React systems, such as the built-in browser APIs. useRef declares a ref. You can hold any value in it, but most often it’s used to hold a DOM node.** 
+  * **Effect Hook -Effects let a component connect to and synchronize with external systems. This includes dealing with network, browser DOM, animations, widgets written using a different UI library, and other non-React code. useEffect connects a component to an external system.**
+  * **Performance Hook - A common way to optimize re-rendering performance is to skip unnecessary work. For example, you can tell React to reuse a cached calculation or to skip a re-render if the data has not changed since the previous render. To skip calculations and unnecessary re-rendering, use one of these Hooks: useMemo lets you cache the result of an expensive calculation. useCallback lets you cache a function definition before passing it down to an optimized component.**  
 * Given React Router code, select statements that are true.
-* What does the package.json file do?
-* What does the fetch function do?
+* What does the package.json file do? **the package.json file serves as a central hub for managing dependencies, scripts, metadata, and other essential project information. It is a JSON (JavaScript Object Notation) file located at the root directory of a NodeJS project, providing vital configuration details and facilitating seamless project management.**
+* What does the fetch function do? **The fetch() method in JavaScript is a modern and powerful way to retrieve resources from a server. It returns a Promise that resolves to a Response object, encapsulating the server’s response to your request.**
 * What does node.js do?
 * What does pm2 do?
 * What does Vite do?
