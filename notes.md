@@ -99,7 +99,8 @@ Port 22: SSH (Secure Shell)**
 * Given React Router code, select statements that are true.
 * What does the package.json file do? **the package.json file serves as a central hub for managing dependencies, scripts, metadata, and other essential project information. It is a JSON (JavaScript Object Notation) file located at the root directory of a NodeJS project, providing vital configuration details and facilitating seamless project management.**
 * What does the fetch function do? **The fetch() method in JavaScript is a modern and powerful way to retrieve resources from a server. It returns a Promise that resolves to a Response object, encapsulating the server’s response to your request.**
-* What does node.js do?
-* What does pm2 do?
-* What does Vite do?
+* What does node.js do? **The Node.js run-time environment includes everything you need to execute a program written in JavaScript. Node.js came into existence when the original developers of JavaScript extended it from something you could only run in the browser to something you could run on your machine as a standalone application.**
+* What does pm2 do? **It serves as a daemon process manager that helps developers manage and keep their applications online 24/7. - Automatic application restart after crashes - Load balancing across multiple CPU cores-Built-in monitoring and logging-Zero-downtime updates-Environment management-Process clustering**
+* What does Vite do? **Vite runs a server that is used to compile and serve on the fly any required dependencies via ES modules. This approach allows Vite to process and provide only the code needed at the time. Thus, Vite needs to handle much less code during the server startup and code updates**
+
 
